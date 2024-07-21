@@ -11,7 +11,7 @@ See Kernel Patches section below for the patches used in this guide.
 - `cd kernel/`
 
 ### Build and install the patched kernel
-- Kernel version: `6.7.arch1-1`
+- Kernel version: `6.10.arch1-1`
 
 #### Import GPG keys
 - `for key in ./keys/pgp/*.asc; do gpg --import $key; done`
