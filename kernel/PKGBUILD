@@ -41,10 +41,10 @@ validpgpkeys=(
   'AC2B29BD34A6AFDDB3F68F35E7BFC8EC95861109'  # Ben Hutchings 
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('73d8520dd9cba5acfc5e7208e76b35d9740b8aae38210a9224e32ec4c0d29b70' # kernel tar.xz
-            'f72bf44f8a2a42f7211fcf8702d70f6cd1d20dff8ed455a759d19ede4f796e99' # kernel tar.sign
-            'a4efb43085bdfff93b11f26dd276859d347752958717b99c9f4a97133b857515' # kernel patch.zst
-            '40b19e5e82fd2209d145a95ba9cedc29f9aeed85b2368d187d0e36fd255827b8' # kernel patch.zst.sig
+sha256sums=('e0d50d5b74f8599375660e79f187af7493864dba5ff6671b14983376a070b3d1' # kernel tar.xz
+            '9658213c7ea62d24efc30b2646b45b843644b49b944d55e20ce35e66a446e0d3' # kernel tar.sign
+            '744bb671da084dd2c45652340d672379c8e29ce50c4d460d4f3bd589a2ac72a7' # kernel patch.zst
+            'a01c0cfcfc371aced85f80624f2b209402bfaae2c1322937f59fccaada0c0c54' # kernel patch.zst.sig
             'a1b07c8204f98afb31fecd896ebebc9b0bc1055be20b72acf8ab01dc2aa11b47' # kernel config
             '7de7954d1a9a8a639e70ca6f832340a3f328146a621b1079fbd691688424b715' # VIVE Pro 2 patch 0001
             '1350f7d8336d83e5410858df015c1bd1afb75bd61524ee440f571f311f8e6c8d' # VIVE Pro 2 patch 0002
