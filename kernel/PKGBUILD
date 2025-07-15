@@ -4,7 +4,7 @@
 # https://gitlab.archlinux.org/archlinux/packaging/packages/linux/
 
 pkgbase=linux-vivepro2
-pkgver=6.15.5.arch1
+pkgver=6.15.6.arch1
 pkgrel=1
 pkgdesc='Linux with Vive Pro 2 patches'
 url='https://github.com/santeri3700/vive-pro-2-on-linux'
@@ -27,11 +27,11 @@ _srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
   https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   https://github.com/archlinux/linux/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
-  config                                                                                                                                                                                        # the main kernel config file
-  "https://raw.githubusercontent.com/CertainLach/VivePro2-Linux-Driver/cc807d587cb59589a21320c13cbbf2e8d0d0bd64/kernel-patches/0001-drm-edid-Add-Vive-Cosmos-Vive-Pro-2-to-non-desktop-l.patch" # [PATCH] drm/edid: Add Vive Pro 2 to non-desktop list: https://lkml.org/lkml/2022/1/18/693
-  "0002-drm-edid-parse-DRM-VESA-dsc-bpp-target_fix.patch"                                                                                                                                       # [PATCH v2 1/2] drm/edid: parse DRM VESA dsc bpp target: https://lkml.org/lkml/2022/2/20/151
+  config                                                                                                                                                                 # the main kernel config file
+  "https://raw.githubusercontent.com/CertainLach/VivePro2-Linux-Driver/refs/heads/master/kernel-patches/0001-drm-edid-Add-Vive-Cosmos-Vive-Pro-2-to-non-desktop-l.patch" # [PATCH] drm/edid: Add Vive Pro 2 to non-desktop list: https://lkml.org/lkml/2022/1/18/693
+  "0002-drm-edid-parse-DRM-VESA-dsc-bpp-target_fix.patch"                                                                                                                # [PATCH v2 1/2] drm/edid: parse DRM VESA dsc bpp target: https://lkml.org/lkml/2022/2/20/151
   #"https://raw.githubusercontent.com/CertainLach/VivePro2-Linux-Driver/cc807d587cb59589a21320c13cbbf2e8d0d0bd64/kernel-patches/0002-drm-edid-parse-DRM-VESA-dsc-bpp-target.patch" # [PATCH v2 1/2] drm/edid: parse DRM VESA dsc bpp target: https://lkml.org/lkml/2022/2/20/151
-  "https://raw.githubusercontent.com/CertainLach/VivePro2-Linux-Driver/cc807d587cb59589a21320c13cbbf2e8d0d0bd64/kernel-patches/0003-drm-amd-use-fixed-dsc-bits-per-pixel-from-edid.patch" # [PATCH v2 2/2] drm/amd: use fixed dsc bits-per-pixel from edid: https://lkml.org/lkml/2022/2/20/153
+  "https://raw.githubusercontent.com/CertainLach/VivePro2-Linux-Driver/refs/heads/master/kernel-patches/0003-drm-amd-use-fixed-dsc-bits-per-pixel-from-edid.patch" # [PATCH v2 2/2] drm/amd: use fixed dsc bits-per-pixel from edid: https://lkml.org/lkml/2022/2/20/153
 )
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
@@ -41,11 +41,11 @@ validpgpkeys=(
   'AC2B29BD34A6AFDDB3F68F35E7BFC8EC95861109' # Ben Hutchings
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('2ca707939c14431232649874d438aa58f11b4b127290fa68d164f8bd79c688b5' # kernel tar.xz
-  '5c81f95922ec68bb27f461f1897a5933009b862d5f55d3ffd5abbfb43839eae1'           # kernel tar.sign
-  'a2c29b0d078b961535b384af32643e96a41bdd0f645ceb59eb49f02d4a0ec28e'           # kernel patch.zst
-  'cd87be3c20b152508edcf7c1dcc3db5ea54cc69306153e5f3adc34cb83536ba7'           # kernel patch.zst.sig
-  '01fb08d3ba762ea7098be6bd8e9283011714d663b3b7dfc84cb293a7b692b928'           # kernel config
+sha256sums=('2bb586c954277d070c8fdf6d7275faa93b4807d9bf3353b491d8149cca02b4fc' # kernel tar.xz
+  '29d3121334acf03f940ce6343688bc5006f546ee16b9c5c10049429cc950ea46'           # kernel tar.sign
+  '2e41f4218472b46451af3718ce0951d908ad0356ac3a65f3a81b9ae932b24ad0'           # kernel patch.zst
+  'f66bbf1d9d8358d4ee2b15bd4ea262e3827a2fe6fa02af00f4b0a2409275fad6'           # kernel patch.zst.sig
+  '95a2848c23e99e7987ef73afc9fcd038f2460168fd1c56b1cb59faebe4fb599d'           # kernel config
   '7de7954d1a9a8a639e70ca6f832340a3f328146a621b1079fbd691688424b715'           # VIVE Pro 2 patch 0001
   '1350f7d8336d83e5410858df015c1bd1afb75bd61524ee440f571f311f8e6c8d'           # VIVE Pro 2 patch 0002
   '47bc785531525965cfa42d30ea5dec54b53643d4609a4913618d8db319df3ef0')          # VIVE Pro 2 patch 0003
