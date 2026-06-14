@@ -4,7 +4,7 @@
 # https://gitlab.archlinux.org/archlinux/packaging/packages/linux/
 
 pkgbase=linux-vivepro2
-pkgver=7.0.2.arch1
+pkgver=7.0.12.arch1
 pkgrel=1
 pkgdesc='Linux with Vive Pro 2 patches'
 url='https://github.com/santeri3700/vive-pro-2-on-linux'
@@ -44,11 +44,11 @@ validpgpkeys=(
   'AC2B29BD34A6AFDDB3F68F35E7BFC8EC95861109' # Ben Hutchings
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('53591a03294527a48ccb0b9e559e922df8a38554745a1206827ca751d2ca7662' # kernel tar.xz
-  '37685fff07003eb493fed0433006f4964eb2fa5eb53d9165aae287944f543b86'           # kernel tar.sign
-  '9e71f58c9a9603a29dbdc5f2d79e0e8f2b0b17ab921863fb6418908181d74db4'           # kernel patch.zst
-  'd365d578226089289d168653a4470a64ef9ab7a7a6de8edad26625e4667692a7'           # kernel patch.zst.sig
-  '3a0d5641f9a65d6425823ce0dbf75ec102fbd9c4c8cfbdaac6dc6da864184e3e'           # kernel config
+sha256sums=('57edc9a41efc1ca6b797afa8f4a587a30da2af6bca7356eb56e1e1a4ada265da' # kernel tar.xz
+  '359419a4900d0db41497d8aa574ed16e76f45b35d299df46f69962430d7a1391'           # kernel tar.sign
+  'ce38af1268931b099993cf01c537d6c3b21007e08cad84d2f1e71f95cc5cb75b'           # kernel patch.zst
+  'eff46c38ff637d52557f11d7f9c3646c6e88c26c12d53b5b8f5ccbbce415711b'           # kernel patch.zst.sig
+  '0ed8c43b4ad6c3c3f3affe1317581992ba0eac6697d421a5c6d8210bf1e29ad7'           # kernel config
   'ba22efa9d7e8c8bc40eedeffa8b58b775b62aac63bb238923db65c4646a4fb68'           # 0001-drm-edid-rename-VESA-block-parsing-functions-to-more-generic-name_v7.patch
   '0f72809b7f3d411c41a7eedc2b17038ba08a72e3f2c1f08cbf90899b98da44f2'           # 0002-drm-edid-prepare-for-VESA-vendor-specific-data-block-extension_v7.patch
   '570c73aa34574b4c11237cc34dfd8f669d650ee96a33d598f04ae360ba7ac3db'           # 0003-drm-edid-MSO-should-only-be-used-for-non-eDP-displays_v7.patch
